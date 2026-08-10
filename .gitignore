@@ -1,0 +1,26 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+dist/
+build/
+.expo/
+.expo-shared/
+web-build/
+*.log
+
+# Java / Maven
+target/
+*.class
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
