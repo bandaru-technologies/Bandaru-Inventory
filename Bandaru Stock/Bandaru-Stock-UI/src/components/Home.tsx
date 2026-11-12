@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import type { ReactElement } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Home.css'
 
 interface Portal {
@@ -95,6 +96,7 @@ function formatIndianPhone(rawDigits: string): string {
 }
 
 function Home() {
+  const navigate = useNavigate()
   const [activePortal, setActivePortal] = useState<Portal | null>(null)
   const [phone, setPhone] = useState('')
 
@@ -116,9 +118,10 @@ function Home() {
 
   const handleContinue = () => {
     if (!activePortal || !isPhoneValid) return
-    const fullNumber = `+91${phone.replace(/\D/g, '')}`
     // TODO: replace with real OTP/auth request once Auth Service is wired up.
-    window.location.href = `${activePortal.loginPath}?phone=${encodeURIComponent(fullNumber)}`
+    // All portals currently land on the same directory/dashboard shell until
+    // portal-specific dashboards are built.
+    navigate('/merchant/directory')
   }
 
   return (
