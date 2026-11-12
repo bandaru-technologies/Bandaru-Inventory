@@ -1,0 +1,280 @@
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f6f8;
+  color: #0f172a;
+  font-family: inherit;
+}
+
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 48px;
+  background: #f7f8fa;
+  border-bottom: 1px solid #e2e5ea;
+}
+
+.home-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.home-brand-icon {
+  width: 30px;
+  height: 30px;
+  color: #0f172a;
+}
+
+.home-help-icon {
+  width: 26px;
+  height: 26px;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+.home-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px 48px;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0 0 16px;
+  letter-spacing: -0.02em;
+}
+
+.home-subtitle {
+  max-width: 640px;
+  font-size: 1.15rem;
+  color: #475569;
+  margin: 0 0 48px;
+  line-height: 1.5;
+}
+
+.portal-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  justify-content: center;
+  max-width: 1120px;
+  width: 100%;
+}
+
+.portal-card {
+  background: #ffffff;
+  border: 1px solid #e2e5ea;
+  border-radius: 12px;
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 340px;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.portal-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.portal-icon-wrap.admin {
+  background: #0f172a;
+  color: #cbd5e1;
+}
+
+.portal-icon-wrap.merchant {
+  background: #0f172a;
+  color: #60a5fa;
+}
+
+.portal-icon-wrap.customer {
+  background: #dbeafe;
+  color: #0f172a;
+}
+
+.portal-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.portal-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.portal-description {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 28px;
+  flex: 1;
+}
+
+.portal-login-btn {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #14532d;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.portal-login-btn:hover {
+  background: #103d22;
+}
+
+.portal-login-btn:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.portal-card-login {
+  position: relative;
+  padding-top: 60px;
+}
+
+.back-link {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  background: none;
+  color: #475569;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.back-link:hover {
+  color: #0f172a;
+}
+
+.back-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.phone-field {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.phone-label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.phone-input-wrap {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+.phone-input-wrap:focus-within {
+  border-color: #14532d;
+  box-shadow: 0 0 0 2px rgba(20, 83, 45, 0.15);
+}
+
+.phone-prefix {
+  padding: 12px 0 12px 14px;
+  color: #64748b;
+  font-size: 1rem;
+  user-select: none;
+}
+
+.phone-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 12px 14px 12px 6px;
+  font-size: 1rem;
+  color: #0f172a;
+  outline: none;
+}
+
+.home-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 24px 48px;
+  border-top: 1px solid #e2e5ea;
+  background: #ffffff;
+}
+
+.home-footer-brand {
+  font-weight: 700;
+}
+
+.home-footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.home-footer-links a {
+  color: #334155;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.home-footer-links a:hover {
+  text-decoration: underline;
+}
+
+.home-footer-copyright {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 960px) {
+  .home-header,
+  .home-footer {
+    padding: 20px 24px;
+  }
+
+  .home-title {
+    font-size: 2.2rem;
+  }
+
+  .portal-cards {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .portal-card {
+    width: 100%;
+    max-width: 360px;
+  }
+}
